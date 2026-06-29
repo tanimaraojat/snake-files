@@ -52,8 +52,8 @@ void drawSnake(SDL_Renderer *renderer, Snake *snake)
     SDL_SetRenderDrawColor(
         renderer,
         0,
-        255,
         0,
+        255,
         255
     );
 

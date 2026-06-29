@@ -111,7 +111,18 @@ int main(int argc, char *argv[])
         SDL_Delay(100);
     }
 
-    SDL_Log("Final Score: %d",score);
+    char message[100];
+
+sprintf(message,
+        "Game Over!\n\nYour Score: %d",
+        score);
+
+SDL_ShowSimpleMessageBox(
+    SDL_MESSAGEBOX_INFORMATION,
+    "Snake Game",
+    message,
+    window
+);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
